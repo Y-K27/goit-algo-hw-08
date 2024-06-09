@@ -258,12 +258,12 @@ def birthdays(book: AddressBook):                               # Ф-ія пов
     return list
 
 #Функція запису контактної книги в файл
-def save_data(book, filename="goit-algo-hw-08/addressbook.pkl"):
+def save_data(book, filename="addressbook.pkl"):
     with open(filename, "wb") as f:
         pickle.dump(book, f)
 
 #Функція считування контактної книги з файлу
-def load_data(filename="goit-algo-hw-08/addressbook.pkl"):
+def load_data(filename="addressbook.pkl"):
     try:
         with open(filename, "rb") as f:
             return pickle.load(f)
